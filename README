@@ -1,0 +1,25 @@
+# Análisis de Ensayo de Compresión de Hormigón
+
+## Propósito
+Este proyecto organiza, procesa y documenta los datos obtenidos de un ensayo de compresión de hormigón. El objetivo principal es asegurar la trazabilidad de los cálculos y permitir la reproducibilidad del gráfico esfuerzo-deformación.
+
+## Entradas
+*   Datos crudos de carga y deformación obtenidos en laboratorio, ubicados en la carpeta `/datos_origen`.
+
+## Pasos y Procesamiento
+1.  **Resguardo:** Se aislaron los datos originales para evitar su sobrescritura.
+2.  **Cálculo:** En el archivo `/procesamiento/analisis_compresion.xlsx`, se calculó el área transversal de la probeta y el esfuerzo.
+3.  **Visualización:** Se generó un gráfico dinámico directamente vinculado a los cálculos, reemplazando la imagen estática original.
+
+## Salidas
+*   Planilla de Excel con fórmulas auditables y un gráfico de curva esfuerzo-deformación dinámico.
+
+## Herramientas Utilizadas
+*   **Microsoft Excel:** Para el análisis de datos y graficación.
+*   **Git / GitHub:** Para el control de versiones y estructuración del proyecto.
+
+## Unidades, Supuestos y Limitaciones
+*   **Probeta:** Se asume una probeta cilíndrica estándar.
+*   **Dimensiones:** Diámetro (D) = 150 mm ; Altura (H) = 300 mm.
+*   **Unidades:** El área se calcula en milímetros cuadrados ($mm^2$) y el esfuerzo resultante se expresa en Megapascales (MPa).
+*   **Limitaciones:** El modelo asume que las dimensiones de la probeta son perfectamente uniformes durante todo el ensayo.
